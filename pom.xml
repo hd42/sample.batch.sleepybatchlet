@@ -31,6 +31,12 @@
             <version>1.0</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- <dependency>
+            <groupId>org.apache.batchee</groupId>
+            <artifactId>batchee-cdi</artifactId>
+            <version>0.5-incubating-SNAPSHOT</version>
+        </dependency> -->
         
     </dependencies>
 

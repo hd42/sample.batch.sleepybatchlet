@@ -36,14 +36,15 @@ import javax.inject.Inject;
  */
 public class SleepyBatchlet extends AbstractBatchlet {
 
-    private final static Logger logger = Logger.getLogger(SleepyBatchlet.class.getName());
+	@Inject
+	private JobLogger logger;
 
     /**
      * Logging helper.
      */
-    protected static void log(String method, Object msg) {
-        System.out.println("SleepyBatchlet: " + method + ": " + String.valueOf(msg));
-        // logger.info("SleepyBatchlet: " + method + ": " + String.valueOf(msg));
+    protected void log(String method, Object msg) {
+        //System.out.println("SleepyBatchlet: " + method + ": " + String.valueOf(msg));
+        logger.log("SleepyBatchlet: " + method + ": " + String.valueOf(msg));
     }
 
     /**
